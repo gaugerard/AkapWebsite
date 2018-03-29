@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Website for the kap of Namur">
+		<meta name="keywords" content="akap, kot à projet, namur">
+		<meta name="author" content="Gerard Gauthier">
+		<title>Akap Website | Welcome</title>
+		<link rel="stylesheet" href="./css/style2.css"> <!-- link to the style.css file -->
+	</head>
+	<body>
+		<header>
+			<div class="container"> <!-- id : for something UNIQUE | class : something you put over and over -->
+				<div id="branding">
+					<h1><span class="highlight">Akap</span> kot à projet</h1>
+				</div>
+				<nav>
+					<ul> <!-- used for unordered list-->
+						<li class="current"><a href="index2.html">Home</a></li>
+						<!-- <li><a href="Ekot2.html">Ekot</a></li> -->
+						<li><a href="activite2.html">Activité</a></li>
+						<div class="dropdown">
+						  <button class="dropbtn" onclick="myFunction()">KOT
+						    <i class="fa fa-caret-down"></i>
+						  </button>
+						  <div class="dropdown-content" id="myDropdown">
+						    <a href="ekot2.html">Ekot</a>
+						    <a href="kotient2.html">Kotient</a>
+						    <a href="kotesafe2.html">Kotesafe</a>
+						  </div>
+						</div> 
+					</ul>
+				
+
+			
+				
+				</nav>
+				
+			</div>
+
+			<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+			</script>
+		</header>
+
+		<section id="showcase">
+			<div class="container">
+				<h1>Bienvenue sur le site de l'Akap</h1>
+				<p>
+				Ce site vous permet de vous redirigez vers les kots à projets de l'Akap.
+			</p>
+			</div>	
+		</section>
+
+		<section id="newsletter">
+			<div class="container">
+				<h1>abonnez vous aux kots à projet</h1>
+				<form action="process.php"> <!-- serveur side, need to implemnt this if I want-->
+					<input type="email" placeholder="entrez votre adresse email.">
+					<button type="submit" class="button_1">s'abonner</button>
+				</form>
+			</div>	
+			
+		</section>
+
+		<section id="boxes">
+			<div class="container">
+				<div class="box">
+					<a href="ekot2.html"><img src="./img/ekot_resize.png"></a>
+					<h3>EKOT</h3>
+					<p>
+					l'EKOT concerne tout ce qui fait parti du domaine informatique, de la réparation d'ordinateurs à l'aide en programmation.
+					</p>
+					
+				</div>
+
+				<div class="box">
+					<a href="kotient2.html"><img src="./img/logo-kap.png"></a>
+					<h3>KOTIENT</h3>
+					<p>
+					le KOTIENT permet de renforcer votre niveau en mathématique et aussi de dévelloper des skills en optimisation de programmes.
+					</p>
+					
+				</div>
+				
+				<div class="box">
+					<a href="kotesafe2.html"><img src="./img/kotesafe_resize.jpg"></a>
+					<h3>KOTESAFE</h3>
+					<p>
+					le KOTESAFE offre des formations préventives sur les MST et fournit aussi des préservatifs pour les étudiants.
+					</p>
+					
+				</div>
+
+
+			</div>
+		</section>
+
+		<footer>
+			<p>
+			Akap Website, Copyright &copy; 2018
+			</p>
+		</footer>
+	</body>
+</html>
